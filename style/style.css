@@ -4,6 +4,19 @@ body {
     text-align: center;
 }
 
-p {
-    
+button {
+    color: #ff5e84;
+    border: none;
+    font-weight: bold;
+    background: none;
+}
+
+.fat {
+    color: white;
+    background: #ff5e84;
+}
+
+#footer a {
+    color: #25282b;
+    text-decoration: none; /* Tirar o sublinhado do link */
 }
