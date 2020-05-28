@@ -20,3 +20,7 @@ button.fat {
     color: #25282b;
     text-decoration: none; /* Tirar o sublinhado do link */
 }
+
+.hide {
+    display: none; /* Esconder */
+}
