@@ -1,6 +1,7 @@
 body {
     background: #e5e5e5;
     color: #25282b;
+    font-family: 'Montserrat', sans-serif; /* Google Fonts */
     margin: 0; /* Remover margin do body */
 }
 
@@ -17,6 +18,12 @@ a {
 a:hover {
     color: #ff5e84;
     text-decoration: underline; /* Tirar o sublinhado do link */
+}
+
+p, .description {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
 }
 
 #container {
@@ -36,8 +43,8 @@ main {
 }
 
 #buttons {
-    justify-content: space-evenly; /*Espaço entre os botões*/
     display: flex;
+    justify-content: space-evenly; /*Espaço entre os botões*/
     margin-bottom: 32px;
 }
 
@@ -46,7 +53,10 @@ button {
     border: none;
     color: #ff5e84;
     cursor: pointer; /* Alterado o cursor */
+    font-size: 14px;
     font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0.2px;
     outline: none; /* Removendo linha ao clicar sobre o botão */
 }
 
@@ -68,7 +78,16 @@ button.fat:hover{
 }
 
 footer {
+    color: #777;
+    font-size: 14px;
+    font-weight: 400; /* 400 = Font Regular */
+    line-height: 18px;
+    letter-spacing: 0.2px;
     text-align: center;
+}
+
+footer a {
+    opacity: 0.7;
 }
 
 .idea {
