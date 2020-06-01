@@ -1,7 +1,30 @@
 body {
     background: #e5e5e5;
     color: #25282b;
-    text-align: center;
+    margin: 0; /* Remover margin do body */
+}
+
+#container {
+    width: 90%; /* Largura da página (fluidez) */
+    max-width: 980px; /* Largura Máxima do Bloco */
+    margin-right: auto; /* Margem direita da página */
+    margin-left: auto;
+    display: flex; /* Dispor blocos em linha */
+}
+
+#intro {
+    width: 300px; /*Tamanho fixo ao se ajustar a página*/
+    margin-right: 20px;
+}
+
+main {
+    margin: 32px 100px 0 0;
+}
+
+#buttons {
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: space-evenly; /*Espaço entre os botões*/
 }
 
 button {
@@ -16,7 +39,11 @@ button.fat {
     background: #ff5e84;
 }
 
-#footer a {
+footer {
+    text-align: center;
+}
+
+footer a {
     color: #25282b;
     text-decoration: none; /* Tirar o sublinhado do link */
 }
