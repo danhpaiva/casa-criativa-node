@@ -5,38 +5,51 @@ body {
 }
 
 #container {
-    width: 90%; /* Largura da página (fluidez) */
-    max-width: 980px; /* Largura Máxima do Bloco */
-    margin-right: auto; /* Margem direita da página */
-    margin-left: auto;
     display: flex; /* Dispor blocos em linha */
+    max-width: 980px; /* Largura Máxima do Bloco */
+    margin: 40px auto;
+    width: 80%; /* Largura da página (fluidez) */
 }
 
 #intro {
-    width: 300px; /*Tamanho fixo ao se ajustar a página*/
     margin-right: 20px;
+    width: 300px; /*Tamanho fixo ao se ajustar a página*/
 }
 
 main {
-    margin: 32px 100px 0 0;
+    margin: 32px 0;
 }
 
 #buttons {
+    justify-content: space-evenly; /*Espaço entre os botões*/
     display: flex;
     margin-bottom: 32px;
-    justify-content: space-evenly; /*Espaço entre os botões*/
 }
 
 button {
-    color: #ff5e84;
-    border: none;
-    font-weight: bold;
     background: none;
+    border: none;
+    color: #ff5e84;
+    cursor: pointer; /* Alterado o cursor */
+    font-weight: bold;
+    outline: none; /* Removendo linha ao clicar sobre o botão */
+}
+
+button:hover {
+    text-decoration: underline; /* sublinhar butão ao passar mouse por cima */
 }
 
 button.fat {
-    color: white;
     background: #ff5e84;
+    border-radius: 6px; /* aplicando borda arredondada */
+    box-shadow: 0px 8px 16px #ff5e8432; /* aplicar sombra */
+    color: white;
+    width: 150px;
+    height: 40px;
+}
+
+button.fat:hover{
+    text-decoration: none;
 }
 
 footer {
@@ -46,6 +59,11 @@ footer {
 footer a {
     color: #25282b;
     text-decoration: none; /* Tirar o sublinhado do link */
+}
+
+footer a:hover{
+    color: #ff5e84;
+    font-weight: bold;
 }
 
 .hide {
